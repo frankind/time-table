@@ -48,6 +48,15 @@ class TimeTableTests: XCTestCase {
         let timeTable = TimeTable()
         print("TestJ")
         XCTAssert(false,"Testtttt")
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .LongStyle
+        dateFormatter.timeStyle = .ShortStyle
+        
+        let date = NSDate()
+        
+        measureBlock() {
+            let string = dateFormatter.stringFromDate(date)
+        }
         
     }
     

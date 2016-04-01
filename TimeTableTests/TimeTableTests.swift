@@ -44,4 +44,11 @@ class TimeTableTests: XCTestCase {
         }
     }
     
+    func testPrintInfo(){
+        let timeTable = TimeTable()
+        print("TestJ")
+        XCTAssert(false,"Testtttt")
+        
+    }
+    
 }
